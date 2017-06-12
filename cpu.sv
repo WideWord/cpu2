@@ -149,6 +149,14 @@ always @(posedge clk or posedge reset) begin
 						regs[oc] <= regs[oa] & regs[ob5];
 						state <= ST_FETCH_CMD;
 					end
+					'h14: begin
+						regs[oc] <= regs[oa] << regs[ob5][4:0];
+						state <= ST_FETCH_CMD;
+					end
+					'h15: begin
+						regs[oc] <= regs[oa] >> regs[ob5][4:0];
+						state <= ST_FETCH_CMD;
+					end
 					
 					'h18: begin
 						regs[oc] <= regs[oa] + ob32s;
@@ -164,6 +172,14 @@ always @(posedge clk or posedge reset) begin
 					end
 					'h1C: begin
 						regs[oc] <= ob32s - regs[oa];
+						state <= ST_FETCH_CMD;
+					end
+					'h1D: begin
+						regs[oc] <= regs[oa] << ob5;
+						state <= ST_FETCH_CMD;
+					end
+					'h1E: begin
+						regs[oc] <= regs[oa] >> ob5;
 						state <= ST_FETCH_CMD;
 					end
 					

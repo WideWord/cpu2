@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at sdcard.sv(67): object "State" differs only in case from object "state" in the same scope
+Info (10281): Verilog HDL Declaration information at cpu.sv(36): object "State" differs only in case from object "state" in the same scope

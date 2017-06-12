@@ -1,0 +1,10 @@
+
+module Memory(
+	input addr[31:0];
+	input in_data[7:0];
+	output out_data[7:0];
+	input sig_write;
+	input sig_read;
+);
+
+endmodule

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 12 11:21:20 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : cur
+Top-level Entity Name : cur
+Family : Cyclone IV E
+Total logic elements : 9,940
+    Total combinational functions : 8,233
+    Dedicated logic registers : 2,467
+Total registers : 2467
+Total pins : 149
+Total virtual pins : 0
+Total memory bits : 12,672
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
